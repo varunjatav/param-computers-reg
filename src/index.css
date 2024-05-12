@@ -1,0 +1,207 @@
+/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  padding: 20px;
+  background-image: linear-gradient(to right, purple, blue);
+}
+.header{
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  padding:  10px 20px;
+  margin: auto;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 48px;
+  text-align: center;
+}
+h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 100;
+  font-style: normal;
+}
+.main-container{
+  height: 60vh;
+}
+.button {
+  background-color: purple;
+  padding: 5px 15px;
+  border-radius: 15px;
+  border: none;
+  transition: all 0.8s ease;
+}
+.button:hover {
+  scale: 1.1;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  /* Align navigation to the right */
+  align-items: center;
+}
+nav  .active{
+  font-weight: bold;
+}
+nav a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  /* Add border-radius for a rounded look */
+  transition: background-color 0.3s ease;
+  /* Smooth transition for background color */
+}
+
+nav a:hover {
+  color: rgb(244, 238, 238);
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: align;
+}
+.btn-font {
+  font-size: 24px;
+}
+.text-warning {
+  margin: 0;
+  justify-content: center;
+  /* To remove default margin on the h1 element */
+}
+.about-para{
+  font-size: 20px;
+}
+
+.option_sidebar {
+  display: none;
+}
+.sidebar_navigation {
+  position: fixed;
+  padding-bottom: 200px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, purple, blue);
+  z-index: 1;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.alert{
+  width: 50%;
+  margin: auto;
+}
+.whatsapp-logo{
+  transition: all 0.5s ease-in-out;
+}
+.whatsapp:hover .whatsapp-logo{
+ scale: 1.2;
+}
+.email-logo{
+  transition: all 0.5s ease-in-out;
+}
+.email:hover .email-logo{
+ scale: 1.2;
+}
+.location-logo{
+  transition: all 0.5s ease-in-out;
+}
+.location:hover .location-logo{
+ scale: 1.2;
+}
+.address{
+  height: 400px;
+}
+/* .google_map{
+  height: 450px;
+  width: 550px;
+} */
+
+/* form container */
+.form_container{
+  width: 700px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .option_sidebar {
+    display: block;
+  }
+  .navigation {
+    display: none;
+  }
+  .alert{
+    width: 60%;
+    margin: auto;
+  }
+  .address{
+    height: 800px;
+  }
+}
+@media screen and (max-width:770px){
+  .form_container{
+    width: 80%;
+  }
+  
+}
+@media screen and (max-width: 530px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+  .heading {
+    font-size: 18px;
+  }
+  .sub-heading {
+    font-size: 15px;
+  }
+  .btn-font {
+    font-size: 15px;
+  }
+  .about-para {
+    font-size: 15px;
+  }
+  .course-list{
+    font-size: 15px;
+  }
+  .main-container{
+    height: 66vh;
+  }
+  .alert{
+    width: 100%;
+  }
+  .address{
+    height: 800px;
+  }
+  .form_container{
+    width: 90%;
+  }
+}
+@media screen and (max-width:350px){
+  .form_container{
+    width: 97%;
+  }
+}
